@@ -1,0 +1,1335 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #fff8df;
+    background: url(immagini/wood-bg-blurred.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5{
+    font-family: century-gothic;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+aside{
+    color: #222529;
+    font-family: century-gothic;
+}
+aside p{
+    font-weight: 700;
+}
+.card1 , .card2, .card3, .card4{
+    margin: 30px 15px;
+    border-radius: 30px;
+    
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
+    
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
+}
+
+/* --------------------------------------------------- NAV ----------------------------------------------------- */
+nav a:hover,
+nav .active{
+    color: #d3a786;
+}
+nav{
+    padding: 2vh;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #222529;
+    z-index: 1000;
+}
+
+.wide ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    font-size: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff8df;
+} 
+/* --------------------------------------------------- BANNER ----------------------------------------------------- */
+.wide aside{
+    text-align: center;
+    margin-top: 90px;
+}
+
+#banner h1{
+    font-size: 2rem;
+    letter-spacing: 1.5em;
+    margin-left: 1.5em;
+}
+
+#banner p{
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+/* --------------------------------------------------- CARD 1 ----------------------------------------------------- */
+.card1 h2{
+    padding: 30px 30px 10px 30px;
+}
+
+.card1 p{
+    margin-bottom: 20px;
+    padding: 0px 30px 0px 30px;
+}
+
+.card1 h5{
+    padding: 0px 30px 10px 30px;
+    font-size: 1.2rem;
+}
+
+.card1 a{
+    text-decoration: none;
+    color: #222529;
+    font-weight: 700;
+}
+
+.animali{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    padding: 20px;
+    align-items: center;
+    justify-items: left;
+}
+.imgmucca, .imggrillo{
+    padding: 30px;
+}
+.imgmucca img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.infomucca{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.imggrillo img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.infogrillo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+.infomucca ul, .infogrillo ul{
+    list-style: none;
+}
+.infomucca li, .infogrillo li{
+    margin: 15px 0px;
+}
+.scopri{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 30px 30px 30px;
+}
+.scopri p{
+    margin-bottom: 0px;
+    padding: 0px 10px;
+    font-family: century-gothic;
+    font-weight: bold;  
+}
+
+.card1 .scopri a{
+    text-decoration: none;
+    color: #fff8df;
+}
+#pulsante1, #pulsante2{
+    width: 10%;
+    display: block;
+}
+/* --------------------------------------------------- CARD 2 ----------------------------------------------------- */
+.plch p{
+    padding: 0px 20px;
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card2 h2{
+    margin-top: 30px;
+}
+
+.card2 a #far1, #far2, #far3, #far4{
+    width: 50%;
+    border-radius: 50%;
+    margin: 20px 0px 20px 0px;
+}
+.card2 .scopri{
+    margin-top: 50px;
+}
+
+.card2 .scopri a{
+    text-decoration: none;
+    color: #fff8df;
+}
+
+
+
+/* --------------------------------------------------- CARD 3 ----------------------------------------------------- */
+.card3{
+    text-align: left;
+}
+
+.card3 h2{
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+}
+.card3 h3{
+    text-align: center;
+    padding: 0px 30px;
+    font-weight: normal;
+}
+.card3 h3 span{
+    font-weight: bold;
+}
+
+.ricetta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    justify-items: center;
+}
+.crostataimg{
+    padding: 30px;
+}
+.crostataimg img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.crostata{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.crostata h4{
+    margin-bottom: 10px;
+}
+.descrizione h4{
+    margin: 0px 30px 10px 30px;   
+}
+
+.crostata #ingredienti{
+    text-align: left;
+}
+#preparazione{
+    text-align: left;
+    padding: 0px 30px 30px 30px;
+}
+
+.card3 a{
+    text-decoration: none;
+    color: #222529;
+    font-weight: 700;
+}
+/* --------------------------------------------------- CARD 4 ----------------------------------------------------- */
+.card4-maintesto{
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+    font-size: 1.5rem;
+}
+
+#card4-span1{
+    font-weight: 400;
+}
+
+.card4 p{
+    padding: 0px 30px 30px 30px;
+}
+
+.card4 a{
+    text-decoration: none;
+    color: #222529;
+    font-weight: 700;
+}
+
+.flourfestival{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.festival{
+    padding-bottom: 30px;
+}
+/* --------------------------------------------------- FOOTER ----------------------------------------------------- */
+
+.wide-footer{
+    background-color: #222529;
+} 
+
+footer{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    width: 100%;
+}
+
+footer .info{
+    display: flex;
+    font-size: .6rem;
+    align-items: center;
+}
+
+footer .info a{
+    text-decoration: none;
+    color: #d3a786;
+}
+
+footer .info p{
+    color: #fff8df ;
+}
+
+footer #info1, #info2{
+    padding: 0px 10px 0px 10px;
+}
+.footer-disclaimer{
+    padding: 0px 20px 30px 20px;
+    font-size: .6rem;
+    text-align: center;
+}
+/* --------------------------------- MEDIA QUERY > 800px ------------------------------------------------------*/
+
+@media (min-width: 800px){ 
+
+    img{
+        max-width: 80%;
+        height: auto;
+    }
+
+    p{
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    h1, h2, h3, h4, h5{
+        font-size: 2em;
+    }    
+    .card1 , .card2, .card3, .card4{
+        margin: auto;
+        max-width: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 70px;
+    }
+    /*  --------- NAV -------------- */
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .wide ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wide a{
+        padding: 0px 50px;
+        text-transform: uppercase;
+    }
+
+    #banner{
+        margin-top: 120px;
+    }
+
+    #banner h1{
+        font-size: 3rem;
+    }
+
+    #banner p{
+        font-size: 1.2em;
+        margin: 0px 0px 20px 0px;
+        padding-bottom: 10px;
+        letter-spacing: 10px;
+        margin-left: 10px;
+    }
+    #banner img{
+        margin: 15px 0px;
+    }
+    /* ------------- CARD 1 ---------------- */
+    .card1 h2 {
+        padding: 50px 30px 10px 60px;
+    }
+    .card1 p{
+        padding: 0px 60px;
+    }
+    .card1 h5{
+        padding: 0px 60px;
+        font-size: 1.5em;
+    }
+    .scopri{
+        padding-right: 50px;
+        padding-bottom:40px;
+    }
+    .scopri p{
+        padding: 0px 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #fff8df;
+    }
+    .imgmucca img, .imggrillo img{
+        transition: all .5s;
+    }
+
+    .imgmucca img:hover, .imggrillo img:hover{
+        transform: scale(1.05);
+        
+    }
+    .animali{
+        grid-template-rows: 1fr 0.3fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .imgmucca img, .imggrillo img{ /*CENTRARE L'IMMAGINE ALL'INTERNO DI UN DIV*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imggrillo img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .infomucca{
+        align-self: start;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .infogrillo{
+        align-self: start;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+    }
+    .infomucca, .infogrillo li{
+        font-size: 1.2em;
+    }
+    #pulsante1, #pulsante2{
+        max-width: 5vw;
+    }
+    .card1 #pulsante1 img{
+        transition: all 0.5s ease;
+    }
+    .card1 #pulsante1 img:hover{
+        transform: scale(1.1);
+    }
+    /* ------------- CARD 2 ---------------- */
+    .plch p{
+        padding: 0px 50px;
+    }
+
+    .plch-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+
+    .card2 h2{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .card2 h3{
+        font-size: 1.5rem;
+    }
+
+    .card2 h4{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+    
+    .card2 .scopri{
+        padding-bottom: 40px;
+    }
+
+    .card2 .scopri a{
+        text-decoration: none;
+    }
+
+    .card2 .scopri p{
+        padding: 0px 10px;
+    }
+
+    .card2 img{
+        transition: all 0.5s ease;
+    }
+
+    .card2 img:hover{
+        transform: scale(1.05);
+    }
+
+    .card2 #pulsante2 img{
+        transition: all 0.5s ease;
+    }
+    .card2 #pulsante2 img:hover{
+        transform: scale(1.1);
+    }
+
+    /* ------------- CARD 3 ---------------- */
+    .card3 h2{
+        padding-top: 50px;
+    }
+
+    .card3 h3{
+        font-size: 1.5rem;
+    }
+
+    .crostataimg img{
+        float: right;
+        width: 65%;
+        transition: all 0.5s ease;
+    }
+    .crostataimg img:hover{
+        transform: scale(1.05);
+    }
+
+    .crostataimg{
+        padding-right: 0px;
+    }
+
+    .crostata{
+        padding-left: 40px;
+        justify-self: left;
+    }
+
+    .crostata h4, .descrizione h4{
+        font-size: 1.5em;
+    }
+
+    .descrizione h4{
+        padding-left: 60px;
+        margin-left: 0px;
+    }
+
+    #ingredienti{
+        padding-right: 60px;
+    }
+
+    #preparazione{
+        text-align: left;
+        padding: 0px 60px 50px 60px;
+    }
+    /* ------------- CARD 4 ---------------- */
+    .card4-maintesto{
+        padding-top: 50px;
+    }
+
+    .card4 h4{
+        font-size: 2rem;
+    }
+
+    .card4 p{
+        padding: 0px 60px 30px 60px;
+    }
+
+    .festival img{
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        transition: all 0.5s ease;
+    }
+    .festival img:hover{
+        transform: scale(1.05);
+    }
+    .festival{
+        padding-bottom: 50px;
+    }
+}
+/*--------------------- PAGINA PRODOTTI--------------------*/
+/*---------------- NAV BAR ---------------------*/
+
+/*BOX 0*/
+.box0 h2{
+    padding: 30px 30px 10px 30px;
+}
+.box0 p{
+    margin-bottom: 20px;
+    padding: 0px 30px 30px 30px;
+}
+
+.box0 a{
+    text-decoration: none;
+    color: #222529;
+    font-weight: 700;
+}
+.box0{
+    margin: 120px 15px 30px 15px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
+}
+
+/*BOX---CSS COMUNE*/
+
+.box1 h2, .box2 h2, .box3 h2, .box4 h2{
+    padding: 30px 30px 10px 30px;
+}
+
+.box1 p, .box2 p, .box3 p, .box4 p{
+    margin-bottom: 20px;
+    padding: 0px 30px 30px 30px;
+}
+
+.box1, .box2, .box3, .box4{
+    margin: 30px 15px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
+}
+.box0, .box1, .box2, .box3, .box4, .box5{
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
+}
+/*IMMAGINI FARINE*/
+.mondo {
+    display: grid;
+    grid-template-columns: 1.2fr 0.5fr 1fr;
+    grid-gap: 1.2rem;
+    align-items: center;
+}
+.mondo {
+    padding-left: 30px;
+}
+#naz{
+    width: 65%;
+    margin: 20px 0px 20px 0px;
+    justify-self: center;
+}
+
+#fv, #fb, #fc, #fck{
+    margin-right: 20px;
+}
+
+.cerchio{
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    background: #fff8df;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.farinav img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.cerchio0{
+    justify-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.nazione{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+/* --------------------------------- MEDIA QUERY > 800px ------------------------------------------------------*/
+
+@media (min-width: 800px){ 
+    /*BOX 0*/
+    .box0{
+    margin: auto;
+    max-width: 75%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 70px;
+    }
+    .box0 h2{
+        padding: 50px 30px 10px 60px;
+    }
+    .box0 p{
+        padding: 20px 50px 50px 60px;
+    }
+
+    .box0 a{
+        text-decoration: none;
+        color: #222529;
+        font-weight: 700;
+    }
+
+    /*BOX---CSS COMUNE*/
+    /*.box1, .box2, .box3, .box4{
+        min-height: 550px;
+    }*/
+    .box1 h2, .box2 h2, .box3 h2, .box4 h2{
+        padding: 50px 30px 0px 60px;
+    }
+    .box1 p, .box2 p, .box3 p, .box4 p{
+        padding: 0px 50px 50px 60px;
+        margin-bottom: 0px;
+    }
+
+    .box1,  .box2 {
+        margin: auto;
+        max-width: 75%;
+        margin-bottom: 0px;
+        border-radius: 70px;
+        display: block;
+    }
+
+    .box3,  .box4 {
+        margin: auto;
+        max-width: 75%;
+        margin-top: 0px;
+        border-radius: 70px;
+
+        display: block;
+    }
+
+    .box2, .box4{
+        margin-left: -5px;
+
+    }
+    .box1, .box3{
+        margin-right: -5px;
+    }
+    .box3, .box4{
+        margin-top: -5px;
+    }
+    .box1, .box2{
+        margin-bottom: -5px;
+    }
+
+    /*-----GRIGLIA INTERNA--------*/
+
+    .mondo {
+        display: grid;
+        grid-gap: 1rem;
+        align-items: center;
+    }
+    .mondo {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #naz{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .cerchio{
+        display: inline-flex;
+        width: 8px;
+        height: 8px;
+        background: #fff8df;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    .cerchio1{
+        font-size: 10px;
+    }
+    #fv, #fb, #fc, #fck{
+        margin-right: -10px;
+        width: 100;
+    }
+
+    .farinav img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .cerchio0{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .nazione{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /*--------GRIGLIA PRINCIPALE-----*/
+    .grigliax4 {
+        display: grid;
+        grid-gap: 1.2rem;
+        align-items: center;
+    }
+
+    .box1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .box2{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .box3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+    }
+    .box4{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4; 
+    }
+
+    /*------FOOTER FARINE---------*/
+    #footer-farine{
+        margin-top: 50px;
+    }
+}
+/* ---------------- CIBO DEL FUTURO ---------------- */
+/* ---------------- CARD 1 ------------------------- */
+#futuro{
+    margin-top: 120px;
+}
+
+#animalifuturo{
+    display: grid;
+    grid-template-rows: repeat(4, 0.3fr);
+    grid-gap: 0;
+    padding: 0px 30px 30px 30px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+#animalifuturo .imgmucca img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#animalifuturo .infomucca{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+#animalifuturo .imggrillo img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#animalifuturo .infogrillo{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5; 
+}
+#animalifuturo .imgmucca img, #animalifuturo .imggrillo img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ------------------------ CARD 2 --------------------- */
+#card2-h2{
+    text-align: left;
+    padding-left: 30px;
+}
+#card2-sub{
+    padding: 30px;
+    text-align: left;
+}
+.grafici{
+    text-align: left;
+    padding: 0px 30px;
+}
+.grafici h3{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+#graph1 {
+    padding: 30px 0px 10px 0px;
+}
+#graph2, #graph3, #graph4{
+    padding: 30px 0px;
+}
+#graph1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#graph1-icons{
+    display: grid;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 30px;
+    justify-items: center;
+}
+#graph1-icons img{ 
+    display: inline-block; 
+    padding: 0px 10px;
+}
+
+#graph2, #graph3{
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    align-items: center;
+}
+#graph2-icons img, #graph3-icons img{
+    display: inline-block;
+    max-width: 70%;
+}
+#graph3-icons{
+    margin-top: 20px;
+    align-self: center;
+}
+#graph3-icons img{
+    padding-top: 40px;
+}
+
+#graph4-icons img{
+    max-width: 30%;   
+    display: inline-block; 
+}
+#graph4-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 30px;
+}
+/* ------------ CARD 3 -------------- */
+#card3-h2{
+    text-align: left;
+}
+#card3-sub{
+    padding: 0px 30px 30px 30px;
+}
+.worldinsects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0px 30px 30px 30px;
+    grid-gap: 3rem;
+}
+
+.worldinsects img{
+    max-width: 60%;
+}
+/* --------------- MEDIA QUERY - CIBO FUTURO ----------------- */
+@media (min-width: 800px){ 
+    /* ----------------------- CARD 1 ------------------ */
+    .card1 #par1{
+        margin-top: 20px;
+    }
+    #futuro h2{
+        padding-right: 60px;
+    }
+    #animalifuturo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.5fr;
+        align-items: center;
+        justify-items: center;
+    }
+    #animalifuturo .imgmucca img, #animalifuturo .imggrillo img{ 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #animalifuturo .imggrillo img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    #animalifuturo .infomucca{
+        align-self: start;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    #animalifuturo .infogrillo{
+        align-self: start;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+    }
+    #animalifuturo .infomucca ul,  #animalifuturo .infogrillo ul{
+        padding: 0px 30px 25px 30px;
+    }
+    /* ---------------- CARD 2 ---------------- */
+    #card2-h2{
+        text-align: center;
+    }
+    .card2 #card2-h2, #card2-sub, #card3-sub{
+        margin-bottom: 20px;
+    }
+    .card2 .grafici img:hover{
+        transform: scale(1.02);
+    }
+    .card2 #card2-h2, #card2-sub, #card3-sub, .grafici{
+        padding: 0px 60px;
+    }
+
+    #graph2-graph img, #graph3-graph img{
+        max-width: 95%;
+    }
+
+    #graph4 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #graph4-icons{
+        padding-bottom: 60px;
+    }
+
+    /* ------------------ CARD 3 ------------------ */
+    #card3-h2{
+        padding-left: 60px;
+    }
+    .mappamondo img{
+        display: block;
+        padding-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .worldinsects img, .mappamondo img{
+        transition: all 0.5s ease;
+    }
+    .worldinsects img:hover, .mappamondo img:hover{
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 1400px){
+    .worldinsects{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        padding: 0px 60px 60px 60px;
+    }
+}
+/* ------------------------------ CHI SIAMO ----------------------------- */
+/* --------------------------------- CARDS ------------------------------- */
+.container-azienda, .container{
+    background: hsla(214, 9%, 15%, 1);
+
+    background: linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(214, 9%, 15%, 1) 0%, hsla(210, 8%, 16%, 1) 35%, hsla(0, 0%, 19%, 1) 50%, hsla(216, 6%, 16%, 1) 65%, hsla(214, 9%, 15%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222529", endColorstr="#25282B", GradientType=1 );
+    margin: 0px 15px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 20px rgb(60, 60, 60);
+}
+
+.container-azienda{
+    margin-top: 120px;
+}
+
+.container{ 
+    margin-top: 30px;
+}
+
+.card1-staff, .card2-staff, .sede-info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -1- */
+
+.card1-staff{
+    margin-top: 90px;
+}
+
+.camion img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 20px;
+}
+
+.card1-staff h2{
+    padding: 30px 30px 0px 30px;
+}
+
+.card1-staff p{
+    padding: 0px 30px 30px 30px;
+    
+}
+/* -2- */
+.card2-staff h2{
+    padding: 30px;
+}
+
+/* --------------------------------- Team RAG -------------------------------- */
+.img{
+    text-align: center;
+    padding: 0px 30px;
+}
+.persona img{
+    max-width: 45%;
+}
+
+.gio-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.text h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.card2-staff p {
+    padding: 10px 30px 50px 30px;
+}
+
+#gp{  /* p con padding-bot 0 per il New Entry*/
+    padding-top: 0px;
+}
+/* --------------------------------- SEDE -------------------------------- */
+.sede-info h2{
+    padding: 30px 0px 15px 30px;
+}
+
+.moholemap{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.map-responsive{
+    max-width: 100%;
+    padding: 0px 30px;
+}
+
+.sede-info ul{
+    padding: 30px 30px;
+    text-align: left;
+}
+
+.sede-info li{
+    list-style: none; 
+    padding-bottom: 5px; 
+    font-size: .9rem;
+}
+
+.sede-info a{
+    text-decoration: none;
+    color: #d3a786;
+}
+
+/* --------------------------------- FOOTER -------------------------------- */
+.wide-stafffooter{
+    background-color: #222529;
+    margin-top: 30px;
+}
+
+.p-foot{
+    padding: 20px 30px;
+    font-size: .6rem;
+    text-align: center;
+}
+/* -------------------------------- MEDIA QUERY > 800px -------------------------------- */
+
+@media (min-width: 800px){
+    /* -------------------------------- CARDS -------------------------------- */
+    .container-azienda, .container{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 50px;
+        border-radius: 70px;
+    }
+
+    .container-azienda{
+        margin-top: -20px;
+    }
+
+    .camion{
+        margin: auto; 
+    }
+
+    .card2-staff img{
+        max-width: 30%;
+        height: auto;
+    }
+
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .persona img{
+        max-width: 30%;
+        padding: 0px 30px;
+    } 
+
+    .card1-staff h2{
+        padding: 50px 30px 0px 50px;
+        text-align: center;
+    }
+
+    .card1-staff{
+        margin-top: 140px;
+    }
+    
+
+    .card1-staff p{
+        padding: 0px 50px 50px 50px;
+    }
+
+    .card2-staff h2{
+        padding: 0px 30px 30px 50px;
+        text-align: center;
+    }
+    #team{
+        padding-top: 50px;
+    }
+    .card2-staff p{
+        padding: 0 50px 50px 50px;
+    }
+
+    #ap{  /* Alessia p con margin-bot 30 per il New Entry*/
+        margin-bottom: 30px;
+    }
+
+    .sede-info h2{
+        padding: 30px 30px 0px 50px;
+    }
+
+/* --------------------------------- SEDE -------------------------------- */
+
+    .sede-info h2{
+        padding: 50px 30px 15px 50px;
+        text-align: center;
+    }
+
+    .moholemap{
+        margin: 40px 0px 0px 0px;
+        max-width: 100%;
+        height: 500px;
+        border-radius: 30px; 
+    }
+    
+    .map-responsive{ 
+        max-width: 700px;
+        margin: auto;
+        padding-bottom: 0px;
+    }
+
+    .uldivs{  /* Flex & jc-center per allineare a sinistra gli elementi li*/
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 40px 0px ;   
+    }
+
+    .sede-info li{
+        list-style: none;
+        padding: 3px 30px;
+        font-size: 1.2rem;
+    }
+
+    .sede-info iframe{
+        transition: all .5s ease;  
+    }
+
+    .sede-info iframe:hover{
+        transform: scale(1.1);
+        border-radius: 0px;
+    }
+
+/* --------------------------------- FOOTER -------------------------------- */
+    .p-foot{
+        color: #fff8df;
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* Nascondere l'active in mobile */
+
+@media (max-width: 800px){
+
+    /* nav .active{
+        display: none;
+    } */
+}
