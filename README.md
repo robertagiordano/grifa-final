@@ -1,5 +1,5 @@
 # grifa-dev
 
-Sito pubblicato: https://giovannamonti.github.io/grifa-dev/
+Sito pubblicato: https://moumou09.github.io/grifa-final/
 
-In fase di sviluppo. 
+Work in progress.
